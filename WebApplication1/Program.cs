@@ -42,3 +42,7 @@ record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {
     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 }
+
+// dotnet ef dbcontext scaffold "Data Source=(LocalDB)MSSQLLocalDB;Initial Catalog=APBD;Integrated Security=True;Encrypt=False" Microsoft.EntityFrameworkCore.SqlServer --output-dir Entities -t Client -t Client_Trip -t Trip -t Country_trip -t Country
+
+    // ;User ID =s29418
